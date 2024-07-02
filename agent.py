@@ -9,7 +9,7 @@ from langchain_openai import OpenAI
 
 
 df = pd.read_csv(
-   "data/data.csv"
+   "https://raw.githubusercontent.com/zanmat/Create-Pandas-DF-Agent-Local/main/data/data.csv"
 )
 
 
@@ -25,6 +25,6 @@ agent = create_pandas_dataframe_agent(
 )
 
 
-agent.invoke("how many refugees were there in Argentina and Brazil in 2022?")
+agent.invoke("how many refugees were there in Peru in 2023?")
 
 
